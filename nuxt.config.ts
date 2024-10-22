@@ -13,6 +13,9 @@ export default defineNuxtConfig({
   i18n: {
     locales: ["tw", "en"], // used in URL path prefix
     defaultLocale: "tw" // default locale of your project for Nuxt pages and routings
+  },
+  devServer: {
+    port: 9527
   }
   // eslint: {
   //   checker: true,
