@@ -1,7 +1,8 @@
 <script setup lang="ts">
-const { locale, setLocale } = useI18n();
+const { setLocale } = useI18n();
 
 const isOpen = ref(false);
+console.log();
 </script>
 
 <template>
@@ -14,7 +15,7 @@ const isOpen = ref(false);
         <UButton @click="setLocale('tw')">繁體中文</UButton>
         <p>{{ $t("welcome") }}</p>
 
-        <Placeholder class="h-48" />
+        <!-- <Placeholder class="h-48" /> -->
       </div>
     </UModal>
   </div>
