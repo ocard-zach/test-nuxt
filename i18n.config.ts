@@ -1,12 +1,12 @@
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: 'tw',
+  locale: "tw",
   messages: {
     en: {
-      welcome: 'Welcome'
+      welcome: "Welcome"
     },
     tw: {
-      welcome: '歡迎光臨'
+      welcome: "歡迎光臨"
     }
   }
-}))
+}));

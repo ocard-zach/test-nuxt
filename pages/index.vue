@@ -6,17 +6,17 @@ console.log();
 </script>
 
 <template>
-  <div>
-    <UButton label="Open" @click="isOpen = true" />
+  <UContainer>
+    <UModal :overlay="false" title="Modal without overlay">
+      <UButton label="Open" color="primary" variant="subtle" @click="isOpen = true" />
 
-    <UModal v-model="isOpen">
-      <div class="p-4 space-x-2">
-        <UButton @click="setLocale('en')">English</UButton>
-        <UButton @click="setLocale('tw')">繁體中文</UButton>
-        <p>{{ $t("welcome") }}</p>
-
-        <!-- <Placeholder class="h-48" /> -->
-      </div>
+      <template #body>
+        <div class="p-4 space-x-2">
+          <UButton @click="setLocale('en')">English</UButton>
+          <UButton @click="setLocale('tw')">繁體中文</UButton>
+          <p>{{ $t("welcome") }}</p>
+        </div>
+      </template>
     </UModal>
-  </div>
+  </UContainer>
 </template>
