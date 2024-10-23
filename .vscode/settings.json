@@ -1,0 +1,73 @@
+{
+    "files.eol": "\n",
+    "files.watcherExclude": {
+        "**/node_modules/**": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue"
+    ],
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[vue]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "[json]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "files.insertFinalNewline": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[javascript][typescript][javascriptreact][typescriptreact]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit"
+        }
+    }
+}
