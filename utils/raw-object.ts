@@ -1,4 +1,4 @@
-import { toRaw } from 'vue';
+import { toRaw } from "vue"
 
 /**
  * 消除物件的響應性
@@ -8,16 +8,18 @@ import { toRaw } from 'vue';
  */
 const toRawObject = (object: any): any => {
   if (Array.isArray(object)) {
-    return object.map((item) => toRawObject(item));
+    return object.map((item) => toRawObject(item))
   }
 
-  if (object !== null && typeof object === 'object') {
-    const rawObject: Record<string, any> = {};
-    Object.keys(object).forEach((key) => rawObject[key] = toRawObject(object[key]));
-    return rawObject;
+  if (object !== null && typeof object === "object") {
+    const rawObject: Record<string, any> = {}
+    Object.keys(object).forEach(
+      (key) => (rawObject[key] = toRawObject(object[key]))
+    )
+    return rawObject
   }
 
-  return toRaw(object);
-};
+  return toRaw(object)
+}
 
-export default toRawObject;
+export default toRawObject

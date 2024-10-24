@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { setLocale } = useI18n();
+const { setLocale } = useI18n()
 </script>
 
 <template>
@@ -8,8 +8,12 @@ const { setLocale } = useI18n();
     <h2 class="font-bold mx-4 mb-2">多語系範例</h2>
     <div class="grid sm:grid-cols-2 gap-4 mx-4 mb-6 bg-gray-200">
       <div class="p-4 space-x-2">
-        <UButton @click.prevent="setLocale('en')" :ui="{ base: 'mr-4 mb-4' }">English</UButton>
-        <UButton @click.prevent="setLocale('tw')" :ui="{ base: 'mr-4 mb-4' }">繁體中文</UButton>
+        <UButton @click.prevent="setLocale('en')" :ui="{ base: 'mr-4 mb-4' }"
+          >English</UButton
+        >
+        <UButton @click.prevent="setLocale('tw')" :ui="{ base: 'mr-4 mb-4' }"
+          >繁體中文</UButton
+        >
       </div>
 
       <div class="p-4 space-x-2 bg-gray-200">
@@ -21,7 +25,10 @@ const { setLocale } = useI18n();
     <h2 class="font-bold mx-4 mb-2">彈窗範例</h2>
     <div class="p-4 mx-4 mb-6 space-x-2 bg-gray-200">
       <UModal :close="false">
-        <UButton label="自訂內容無捲軸 + 無關閉鈕彈窗" :ui="{ base: 'mr-4 mb-4' }" />
+        <UButton
+          label="自訂內容無捲軸 + 無關閉鈕彈窗"
+          :ui="{ base: 'mr-4 mb-4' }"
+        />
         <template #title>
           <div>Ocoin 折抵詳情</div>
         </template>
@@ -37,8 +44,14 @@ const { setLocale } = useI18n();
         </template>
       </UModal>
 
-      <UModal title="Ocoin 折抵詳情" :ui="{ body: 'max-h-96 overflow-y-auto overflow-x-hidden' }">
-        <UButton label="自訂內容有捲軸 + 關閉鈕彈窗" :ui="{ base: 'mr-4 mb-4' }" />
+      <UModal
+        title="Ocoin 折抵詳情"
+        :ui="{ body: 'max-h-96 overflow-y-auto overflow-x-hidden' }"
+      >
+        <UButton
+          label="自訂內容有捲軸 + 關閉鈕彈窗"
+          :ui="{ base: 'mr-4 mb-4' }"
+        />
         <template #body>
           <div class="bg-gray-200">
             <div>Line One</div>
@@ -88,8 +101,14 @@ const { setLocale } = useI18n();
         </template>
       </UModal>
 
-      <UModal title="Ocoin 折抵詳情" :ui="{ content: 'lg:m-0 overflow-y-auto overflow-x-hidden' }">
-        <UButton label="適應裝置高度 + 彈窗內捲軸" :ui="{ base: 'mr-4 mb-4' }" />
+      <UModal
+        title="Ocoin 折抵詳情"
+        :ui="{ content: 'lg:m-0 overflow-y-auto overflow-x-hidden' }"
+      >
+        <UButton
+          label="適應裝置高度 + 彈窗內捲軸"
+          :ui="{ base: 'mr-4 mb-4' }"
+        />
         <template #body>
           <div class="bg-gray-200">
             <div>Line One</div>
@@ -143,7 +162,9 @@ const { setLocale } = useI18n();
     </div>
 
     <!--  Footer Sticky -->
-    <div class="sticky bottom-0 px-4 py-12 bg-white text-center shadow-[0_0_6px_0_rgba(0,0,0,0.25)]">
+    <div
+      class="sticky bottom-0 px-4 py-12 bg-white text-center shadow-[0_0_6px_0_rgba(0,0,0,0.25)]"
+    >
       <UButton label="送出" class="w-full block" />
     </div>
   </UContainer>
