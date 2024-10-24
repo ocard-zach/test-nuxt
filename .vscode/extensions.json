@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "sonarsource.sonarlint-vscode",
+      "vue.volar",
+      "sdras.vue-vscode-snippets",
+      "syler.sass-indented",
+      "mrmlnc.vscode-scss",
+      "streetsidesoftware.code-spell-checker",
+      "stylelint.vscode-stylelint",
+      "esbenp.prettier-vscode",
+      "rvest.vs-code-prettier-eslint"
+    ]
+  }
