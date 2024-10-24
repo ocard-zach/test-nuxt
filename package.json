@@ -14,8 +14,7 @@
     "format": "prettier --write \"{components,pages,plugins,middleware,layouts}/**/*.{js,ts,vue,scss,json}\""
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.6.0",
-    "@nuxt/ui": "^2.18.7",
+    "@nuxt/ui": "3.0.0-alpha.7",
     "@nuxtjs/i18n": "^8.5.5",
     "nuxt": "^3.13.2",
     "nuxt-gtag": "^3.0.1",
