@@ -8,12 +8,14 @@ import { toRaw } from 'vue';
  */
 const toRawObject = (object: any): any => {
   if (Array.isArray(object)) {
-    return object.map((item) => toRawObject(item));
+    return object.map(item => toRawObject(item));
   }
 
   if (object !== null && typeof object === 'object') {
     const rawObject: Record<string, any> = {};
-    Object.keys(object).forEach((key) => rawObject[key] = toRawObject(object[key]));
+    Object.keys(object).forEach(
+      key => (rawObject[key] = toRawObject(object[key]))
+    );
     return rawObject;
   }
 
