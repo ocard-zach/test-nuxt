@@ -5,8 +5,8 @@ const { setLocale } = useI18n();
 <template>
   <UContainer>
     <!--  Lang -->
-    <h2 class="font-bold mb-2">多語系範例</h2>
-    <div class="grid sm:grid-cols-2 gap-4 mb-6 bg-gray-200">
+    <h2 class="font-bold mx-4 mb-2">多語系範例</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mx-4 mb-6 bg-gray-200">
       <div class="p-4 space-x-2">
         <UButton @click.prevent="setLocale('en')" :ui="{ base: 'mr-4 mb-4' }">English</UButton>
         <UButton @click.prevent="setLocale('tw')" :ui="{ base: 'mr-4 mb-4' }">繁體中文</UButton>
@@ -18,8 +18,8 @@ const { setLocale } = useI18n();
     </div>
 
     <!--  Modal -->
-    <h2 class="font-bold mb-2">彈窗範例</h2>
-    <div class="p-4 mb-6 space-x-2 bg-gray-200">
+    <h2 class="font-bold mx-4 mb-2">彈窗範例</h2>
+    <div class="p-4 mx-4 mb-6 space-x-2 bg-gray-200">
       <UModal :close="false">
         <UButton label="自訂內容無捲軸 + 無關閉鈕彈窗" :ui="{ base: 'mr-4 mb-4' }" />
         <template #title>
@@ -138,8 +138,13 @@ const { setLocale } = useI18n();
     </div>
 
     <!--  Content -->
-    <div class="p-4 mb-6 space-x-2 bg-gray-200 h-[960px] text-center">
+    <div class="p-4 mx-4 mb-6 space-x-2 bg-gray-200 h-[960px] text-center">
       <p class="font-bold mb-2">其他內容</p>
+    </div>
+
+    <!--  Footer Sticky -->
+    <div class="sticky bottom-0 px-4 py-12 bg-white text-center shadow-[0_0_6px_0_rgba(0,0,0,0.25)]">
+      <UButton label="送出" class="w-full block" />
     </div>
   </UContainer>
 </template>

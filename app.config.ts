@@ -4,7 +4,7 @@ export default defineAppConfig({
       primary: "yellow"
     },
     container: {
-      base: "px-4 pt-4"
+      base: "max-w-full px-0 pt-4 lg:px-0 sm:px-0"
     },
     button: {
       slots: {
