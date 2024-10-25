@@ -4,6 +4,8 @@ const { setLocale } = useI18n();
 
 <template>
   <UContainer>
+    <DiscountDetailModal></DiscountDetailModal>
+
     <!--  Lang -->
     <h2 class="font-bold mx-4 mb-2">
       多語系範例
