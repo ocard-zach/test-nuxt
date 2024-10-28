@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint'
   ],
   devtools: { enabled: true },
-  alias: {},
   devServer: {
     port: 9527
   },
