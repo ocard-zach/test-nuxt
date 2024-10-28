@@ -10,8 +10,7 @@
     "postinstall": "nuxt prepare",
     "test": "vitest",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"{components,pages,plugins,middleware,layouts}/**/*.{js,ts,vue,scss,json}\""
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/ui": "3.0.0-alpha.7",
